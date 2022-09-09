@@ -1,0 +1,120 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* CSS variables */
+:root {
+    --header-height: 3rem;
+
+    /* Colors */
+    --title-color: #0B0A0A;
+    --text-color: #0B0A0A;
+    --text-color-light: #707070;
+    --contrainer-color: #FAFAFA;
+    --contrainer-color-alt: #F0EFEF;
+    --body-color: #FCFCFC;
+
+    /* Fonts */
+    --body-font: 'Merriweather', serif;;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /* Font weight */
+    --small-font-size: 500;
+    --smaller-font-size: 600;
+
+    /* Margenes */
+    --mb-1: 1.5rem;
+    --mb-2: 1.5rem;
+    --mb-3: 1.5rem;
+
+    /* z index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* Test with and without this feature */
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    padding: 0;
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,u1,p{
+    margin: 0;
+}
+
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+u1{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*CSS class*/
+
+/*First part*/
+
+.section{
+    padding: 1.5rem 0;
+}
+
+.section-title{
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
+
+/*Layout*/
+
+.bd-container{
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* .1-header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    box-shadow: 0 -1px 4px #rgba(0,0,0,.1);
+    transition: .3s;
+} */
