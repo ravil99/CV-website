@@ -13,8 +13,8 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-/* Remove menu mobile */
 
+/* Remove menu mobile */
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -25,7 +25,6 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /* Scroll Sections Active Link */
-
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -45,7 +44,9 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+
 /* Show scroll top */
+// It will work only on devices with small screens (max-width:320px)
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class

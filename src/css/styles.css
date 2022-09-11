@@ -75,9 +75,10 @@ img{
     height: auto;
 }
 
-/*CSS class*/
+/*working with classes*/
 
-/*First part*/
+/*Layout*/
+
 
 .section{
     padding: 1.5rem 0;
@@ -92,8 +93,6 @@ img{
     text-align: center;
     margin-bottom: var(--mb-3);
 }
-
-/*Layout*/
 
 .bd-container{
     max-width: 968px;
@@ -142,6 +141,7 @@ img{
     }
 }
 
+/* Navigational elements */
 .nav__logo{
     color: blue;
     font-weight: var(--font-semi-bold);
@@ -264,8 +264,14 @@ img{
 }
 
 /* PROFILE */
-.profile_desctiption{
+.profile__desctiption{
     text-align: center;
+}
+
+.profile__paragraph{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-3);
 }
 
 /* EDUCATION AND EXPERIENCE */
@@ -396,8 +402,8 @@ img{
     bottom: 5rem;
 }
 
-/*========== MEDIA QUERIES ==========*/
-/* For small devices*/
+/* MEDIA QUERIES */
+/* For small screens*/
 @media screen and (max-width:320px) {
     .nav__list{
         grid-template-columns: repeat(2, 1fr);
@@ -405,7 +411,7 @@ img{
     }    
 }
 
-/* Classes modified for large screen size */
+/* Updating some classes for large screens */
 @media screen and (min-width:968px){
     body{
         margin: 3rem 0;
