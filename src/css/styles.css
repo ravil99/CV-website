@@ -126,7 +126,7 @@ img{
 }
 
 /* This part is dependent on the device */
-@media screen and (min-width: 968px){
+@media screen and (max-width: 968px){
     .nav__menu{
         position: fixed;
         bottom: -100%;
@@ -143,7 +143,7 @@ img{
 
 /* Navigational elements */
 .nav__logo{
-    color: blue;
+    color: var(--text-color);
     font-weight: var(--font-semi-bold);
 }
 
