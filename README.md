@@ -1,4 +1,4 @@
-# Personal CV website
+# Responsive CV website
 
 **It's hosted on** https://ravil99.github.io/CV-website/ .
 
