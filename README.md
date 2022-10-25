@@ -7,3 +7,4 @@
 + Icons - https://boxicons.com/
 + Fonts - https://fonts.google.com/
 
+In near future Import to PDF + Dark theme features will be added
