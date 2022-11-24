@@ -76,6 +76,7 @@
         </nav>
     </header>
     <main class="1-main bd-container">
+        <!-- All elemtns within this div, is generated in PDF-->
         <div class="resume" id="area-cv">
             <div class="resume__left">
 
@@ -86,6 +87,10 @@
                             <img src="src/img/Ravil.jpeg" alt="" class="home__img">
                             <h1 class="home__title">Akhmetzhanov <b>Ravil</b></h1>
                             <h3 class="home__profession">ML/CV engineer</h3>
+                            <!--========== Generate pdf for Mobile ==========-->
+                            <div>
+                                <a download="" href="src/pdf/Ravil_CV.pdf" class="home__button-movil">Download</a>
+                            </div>
                         </div>
                         <div class="home__address bd-grid">
                             <span class="home__information">
@@ -101,6 +106,10 @@
                             </span>
                         </div>
                     </div>
+
+                    <!--========== Generate pdf for Desktop ==========-->
+                    <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+
                 </section>
 
                 <!--========== SOCIAL ==========-->
@@ -143,10 +152,6 @@
                                     experience of working in the industry
                             </li>
 
-                            <li class="profile__paragraph">
-                                <span></span>Part-time working experience as an English teacher (8 months) and Sales
-                                Representative (3 months) in SkyEng online school helped to improve soft skills a lot.
-                            </li>
 
                             <li class="profile__paragraph">
                                 <span></span>I enjoy networking and public speaking. Part of Innopolis Stand Up comedy
@@ -174,6 +179,7 @@
                                 </h3>
                                 <span class="education__studies"><b>Tomsk Polytechnic University</b></span>
                                 <span class="education__year">2016 - 2021</span>
+                                <span class="education__studies"><b>GPA: 4.8/5</b></span>
                             </div>
                         </div>
                         <!-- Master-->
@@ -190,6 +196,7 @@
                                 </h3>
                                 <span class="education__studies"><b>Innopolis University</b></span>
                                 <span class="education__year">2021 - 2023</span>
+                                <span class="education__studies"><b>GPA: 4.9/5</b></span>
                             </div>
                         </div>
                     </div>
@@ -200,42 +207,42 @@
             <div class="resume__right">
                 <!--========== SKILLS  ==========-->
                 <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
+                    <h2 class="section-title">Hard Skills</h2>
 
                     <div class="skills__content bd-grid">
                         <ul>
                             <li class="skills__name">
-                                <span class="skills__circle"></span>Python
+                                <span class="skills__circle"></span>Python, JavaScript
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle"></span>Sklearn, PyTorch
+                                <span class="skills__circle"></span>ML/CV and statistics
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle"></span>OpenCV
+                                <span class="skills__circle"></span>Pandas, Sklearn, PyTorch
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> OpenCV
                             </li>
 
                             <li class="skills__name">
                                 <span class="skills__circle"></span>Linux, Docker
                             </li>
-
-                            <li class="skills__name">
-                                <span class="skills__circle"></span>Pandas
-                            </li>
                         </ul>
 
                         <ul>
                             <li class="skills__name">
-                                <span class="skills__circle"></span>Flask, SQLite
+                                <span class="skills__circle"></span>TensorRT 
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle"></span>TensorRT
+                                <span class="skills__circle"></span>Flask on backend
                             </li>
 
                             <li class="skills__name">
-                                <span class="skills__circle"></span>Strong Math
+                                <span class="skills__circle"></span>HTML, CSS, Svelte on frontend
                             </li>
 
                             <li class="skills__name">
@@ -280,8 +287,10 @@
                                 <h3 class="experience__title"><b>Computer Vision Engineer</b></h3>
                                 <span class="experience__company">Feb 2022 - Current time | Techtrans, St. Petersburg,
                                     remote, part-time</span>
-                                <p class="experience__description">Computer Vision (both classical and ML based) for
-                                    railways security. Projects are developed for various embedded devices.</p>
+                                <p class="experience__description">Completed various CV tasks: dataset preparation, training and evaluation of Deep
+                                    Learning models, deployment on different embedded devices.  </p>
+                                <p class="experience__description">Contributed to several software project from back(Flask) 
+                                    and frontend(Svelte) sides. Company projects are dedicated to railway security.  </p>
                             </div>
                         </div>
                     </div>
@@ -367,6 +376,9 @@
     <a href="#" class="scrolltop" id="scroll-top">
         <i class='bx bxs-up-arrow scrolltop__icon'></i> Go up
     </a>
+
+    <!-- HTML2PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Main JS -->
     <script src="src/js/main.js"></script>
